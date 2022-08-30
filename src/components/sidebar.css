@@ -8,7 +8,6 @@
     flex-direction: column;
     background-color:blue;
     width: 300px;
-    height: auto;
 }
 
 .logo {
@@ -58,6 +57,7 @@
     background-color: blue;
     border: 2px solid;
     padding: 2px 5px;
+    cursor: pointer;
 }
 
 /* .deconnexion-container {

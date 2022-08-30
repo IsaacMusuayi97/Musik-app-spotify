@@ -1,53 +1,35 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Accueil from './components/Accueil';
-import SpotifyWebApi from 'spotify-web-api-js';
-import { dataContext } from './utils/context';
 import { Routes, Route, Navigate } from "react-router-dom";
 import Login from './components/Login';
-import Sidebar from './components/Sidebar';
-import Body from './components/Body';
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Redirect,
-// } from "react-router-dom";
-// import Accueil from './Accueil';
-// import Recherche from './components/Recherche';
-// import Playlists from './components/Playlists';
-// import Sidebar from './components/Sidebar';
+import Search from './components/Search';
+import { Context } from './utils/Context';
+
+
 
 function App() {
-  // const [token, setToken] = useState(""),
-  //   spotify = new SpotifyWebApi();
+    const [token, setToken] = useState("")
 
-  // useEffect(() => {
-  //   const hash = window.location.hash;
-
-  //   if (hash) {
-  //     const token = hash.substring(1).split("&")[0].split("=")[1];
-  //     setToken(token);
-
-  //     spotify.getAccessToken(token)
-
-  //     window.localStorage.setItem("token", token);
-  //   }
-  // }, []);
   return (
-    // <dataContext.Provider value={{ token, setToken }}>
-    //   <div>
-    //     <Routes>
-    //       <Route path='/' element={token ? <Accueil /> : <Login />} />
-    //     </Routes>
-    //   </div>
+    
+      <div className='apps'>
+        <Context.Provider value={{token,setToken}}>
+        <Routes>
+          <Route path='/' element={<Login />} />
+          <Route path='/accueil' element={<Accueil/>} />
+          <Route path='/search' element={<Search />} />
+        </Routes>
+        </Context.Provider>
+        
 
-    // </dataContext.Provider>
+        {/* <Search /> */}
+       
+      </div>
 
-    <div className='app'>
-      <Sidebar/>
-      <Body />
-    </div>
+  
+
+  
   );
 }
 
