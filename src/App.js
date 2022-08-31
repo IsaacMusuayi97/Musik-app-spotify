@@ -5,31 +5,33 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Login from './components/Login';
 import Search from './components/Search';
 import { Context } from './utils/Context';
-
+import Footer from './components/Footer';
 
 
 function App() {
-    const [token, setToken] = useState("")
+  const [token, setToken] = useState(""),
+  [uriPlayer, setUriPlayer] = useState("")
 
   return (
-    
-      <div className='apps'>
-        <Context.Provider value={{token,setToken}}>
+
+    <div className='apps'>
+      <Context.Provider value={{ token, setToken, uriPlayer, setUriPlayer }}>
         <Routes>
           <Route path='/' element={<Login />} />
-          <Route path='/accueil' element={<Accueil/>} />
+          <Route path='/accueil' element={<Accueil />} />
           <Route path='/search' element={<Search />} />
         </Routes>
-        </Context.Provider>
-        
+        <Footer />
+      </Context.Provider>
 
-        {/* <Search /> */}
-       
-      </div>
+     
 
-  
 
-  
+    </div>
+
+
+
+
   );
 }
 

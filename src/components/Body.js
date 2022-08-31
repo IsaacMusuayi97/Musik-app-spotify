@@ -19,18 +19,16 @@ function Body() {
         })
             .catch(err => console.log(err))
     }, [token])
-    console.log('recenmment ', item)
 
     useEffect(() => {
          spotifyApi.getMe().then(res=>{
             setUser(res.display_name)
-            console.log('jj',user);
         })
-        .catch(err => console.log(err))
+        .catch(err => console.error(err))
     }, [token])
-    console.log("isaac", user)
+  
     return (
-        <div className='container--body' >
+        <div  className='container--body' >
             <div className='container--user'>
            
                <div> </div>
@@ -46,7 +44,7 @@ function Body() {
             <div className='musique'>
                 {item.map(data => {
                     return (
-                        <Card titre={data.track.name} image={data.track.album.images[0].url} />
+                        <Card titre={data.track.name} image={data.track.album.images[0].url} uri={data.track.uri}/>
                     )
                 })}
 
