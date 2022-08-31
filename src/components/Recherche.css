@@ -17,16 +17,28 @@
     border-radius: 30px;
 }
 
-.container-search > img {
+.container-search>img {
     margin-left: 5px;
     width: 15px;
 }
 
-.container-search > input {
-  height: 34px;
-  width: 218px;
-  margin-left: 1px;
-  border: none;
-  outline: none;
-  padding-left: 10px;
+.container-search>input {
+    height: 34px;
+    width: 218px;
+    margin-left: 1px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.searchMusic {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-Y: scroll;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
 }

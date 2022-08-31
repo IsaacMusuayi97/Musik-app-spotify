@@ -4,10 +4,10 @@ import './body.css'
 
 
 function Card({image,titre, uri}) {
-    const globalData = useContext(Context)
+    const searchPlay = useContext(Context)
 
     function PlayMusique() {
-        globalData.setUriPlayer(uri)
+        searchPlay.setUriPlayer(uri)
     }
 
     return (

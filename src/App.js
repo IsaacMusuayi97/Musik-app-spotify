@@ -6,16 +6,17 @@ import Login from './components/Login';
 import Search from './components/Search';
 import { Context } from './utils/Context';
 import Footer from './components/Footer';
-
+import SpotifyWebApi from 'spotify-web-api-js';
 
 function App() {
-  const [token, setToken] = useState(""),
-  [uriPlayer, setUriPlayer] = useState("")
+  const [token, setToken] = useState("")
+  const [uriPlayer, setUriPlayer] = useState("")
+  let spotifyApi = new SpotifyWebApi();
 
   return (
 
     <div className='apps'>
-      <Context.Provider value={{ token, setToken, uriPlayer, setUriPlayer }}>
+      <Context.Provider value={{ token, setToken, uriPlayer, setUriPlayer, spotifyApi}}>
         <Routes>
           <Route path='/' element={<Login />} />
           <Route path='/accueil' element={<Accueil />} />

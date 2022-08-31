@@ -14,7 +14,7 @@ function Footer() {
 
         <div className='footer'>
             <SpotifyPlayer
-                token={"BQB2ays5SJgVtQ336IXtZLFYpdoxyyJEERrR2b6TOtoXWLRp-deb3CqhBNSRRC7CoSL1C9NX-pc5r_1MKFfhw0cSB4lWYGFVqaQR4qghgByDQUmZfRtdYhAxOXzYzy-njPFHsEUrdUl8He1TaE54eBwbjlZD9HgIGyL77qVQiPOgpZkuZu1otuMSkqnFv1IZbP7oBob0ulkNRBmg0TELf2O7hmvGljiBEAZQ3_iIYHnRPWIpD1gJURWpOBWnuEl-4lN1xcgLwk_0r2imvm-JJ26KuUdjKovK_7wxASH5io7x2203ZQnX5_4MQGMELdPFs5bsb-9JlCJqc1DSgR8"}
+                token={"BQD9eRc4IrH_sICY6COJaeMHHVeOil82EIGnZF44QbqpwPK6jc4EC1GPlirrMj7DorYX5WLlXkojyLj_phvnEel4iq-zaKU-ukeQODnXozyMzhnP_domc_2XD13ygmhdayjxYBMEagzpp-lOtT8GBaeJi0n6GDSCM-MKXsDjXIFYal1L9f3atETMNGXBtAmWvPxstfNHB2bBH804xYvu4IPO1nQHNAbtSHEccA63YgEfrSB1kMpjKktvkAGzBWxwu7Oyyz-LOhR8wqDuK9CdADQJ82Rzp7iqGVeam3gj6SeYplo-DhOd9b_9x4_nQdb8gMk0SEks8UnL2QCLFcw"}
                 uris={[globalData.uriPlayer]}
                 play={play}
                 autoPlay={true}

@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react'
 import Card from './Card'
-import SpotifyWebApi from 'spotify-web-api-js';
+
 import { Context } from '../utils/Context';
 
 function Body() {
-    const { setToken, token } = useContext(Context)
-    let spotifyApi = new SpotifyWebApi();
+    const { setToken, token, spotifyApi } = useContext(Context)
+   
     spotifyApi.setAccessToken(token);
     const [item, setItem] = useState([]),
       [user, setUser] = useState('')
