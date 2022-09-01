@@ -24,13 +24,12 @@
 .container--body {
     display: flex;
     flex-direction: column;
-   background-color: white;
+   background-color: rgb(247, 245, 245);
     width: 100%;
     padding-top: 20px;
-    /* overflow: hidden;
-    overflow-y: scroll; */
+   
     border-left: 1px solid rgb(150, 142, 142);
-    
+    padding-left: 250px;
 }
 
 .musique{

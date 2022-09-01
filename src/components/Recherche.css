@@ -4,13 +4,13 @@
    background-color: white;
     width: 100%;
     padding-top: 20px;
-    /* overflow: hidden;
-    overflow-y: scroll; */
-    border-left: 1px solid rgb(150, 142, 142)
+    padding-left: 250px;
+    border-left: 1px solid rgb(150, 142, 142);
+    background-color: rgb(247, 245, 245);
 }
 
 .container-search {
-    background-color: black;
+    
     height: 40px;
     width: 270px;
     margin-left: 30px;
