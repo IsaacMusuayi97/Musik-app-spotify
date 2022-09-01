@@ -4,7 +4,8 @@ import './Login.css'
 function Login() {
 
     const CLIENT_ID = "f5168e714aa641e7bc3c31ef96a84a3d"
-    const REDIRECT_URI = "http://localhost:3001/accueil"
+    const REDIRECT_URI = "https://musik-app-spotify.vercel.app/accueil"
+    // "http://localhost:3001/accueil"
     const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
     const RESPONSE_TYPE = "token"
     const scope = [
