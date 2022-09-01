@@ -19,7 +19,7 @@ function Recherche() {
   }
   console.log("res",search);
   return (
-    <div className='container--body'>
+    <div className='container--body-search'>
       <div className='container-search'>
         <img src='Vector (3).png' />
         <input type="text" onChange={handlequery} />

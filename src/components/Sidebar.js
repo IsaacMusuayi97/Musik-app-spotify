@@ -17,22 +17,22 @@ function Sidebar() {
             <h1 className='bibliotheque'>Bibliothèque</h1>
             <div className='container--pages'>
                 
-                <Link to='/accueil'> 
+                <Link style={{textDecoration: "none"}} to='/accueil'> 
                 <div className='accueil'>
-                    <img src='Group.png' /> <div>Accueil</div>   </div></Link>   
+                    <img src='icons8-accueil-24.png' /> <div>Accueil</div>   </div></Link>   
               
-            <Link to='/search'>
+            <Link style={{textDecoration: "none"}} to='/search'>
             <div className='accueil'>
-                    <img src='Vector (1).png' />
+                    <img src='icons8-chercher-30.png' />
                     <div>Recherche</div>
                 </div>
             </Link>
                 <div className='accueil'>
-                    <img src='Vector (2).png' />
+                    <img src='icons8-playlist-50.png' />
                     <div>Playlists</div>
                 </div>
             </div>
-         <Link to='/'>
+         <Link style={{textDecoration: "none"}} to='/'>
          <div onClick={deconnexion} className='deconnexion--container'>
                Deconnexion
             </div>

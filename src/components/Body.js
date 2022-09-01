@@ -31,7 +31,7 @@ function Body() {
         <div  className='container--body' >
             <div className='container--user'>
            
-               <div> </div>
+               <h1 className='title'>Ecoutés récemment</h1>
                 <div className='user'>
                     <img src='Manager.png' />
                     
@@ -40,7 +40,7 @@ function Body() {
                 </div>
 
             </div>
-            <h1 className='title'>Ecoutés récemment</h1>
+            
             <div className='musique'>
                 {item.map(data => {
                     return (
