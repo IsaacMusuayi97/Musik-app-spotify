@@ -1,14 +1,16 @@
 .container--body-search {
     display: flex;
     flex-direction: column;
+   background-color: white;
     width: 100%;
-    padding-top: 50px;
-    color: white;
-    background-color: black;
+    padding-top: 20px;
+    /* overflow: hidden;
+    overflow-y: scroll; */
+    border-left: 1px solid rgb(150, 142, 142)
 }
 
 .container-search {
-    background-color: white;
+    background-color: black;
     height: 40px;
     width: 270px;
     margin-left: 30px;
@@ -32,13 +34,9 @@
 }
 
 .searchMusic {
-    display: flex;
-    flex-direction: row;
+    display:flex;
+    flex-direction:row;
     flex-wrap: wrap;
-    overflow: hidden;
-    overflow-Y: scroll;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
-
 }

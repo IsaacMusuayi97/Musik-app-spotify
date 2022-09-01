@@ -4,8 +4,7 @@
 }
 
 .name--contain {
-    background-color: #D9D9D9;
-    width: 250px;
+    width: 150px;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -15,21 +14,20 @@
     margin-bottom: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
-    box-sizing: border-box;
+    overflow: hidden;
 
 }
 
 .name--contain > img {
-   width: 150px;
-   height: 150px;
-   border-radius: 75px;
-   margin-top: 10px;
-   box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin-top: 10px;
 }
 
 .name--contain > h1 {
-   text-align: center;
-   font-size: 20px;
-   color: black;
-   margin-right: 25px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
 }

@@ -16,16 +16,18 @@ function App() {
   return (
 
     <div className='apps'>
-      <Context.Provider value={{ token, setToken, uriPlayer, setUriPlayer, spotifyApi}}>
+      <Context.Provider value={{ token, setToken, uriPlayer, setUriPlayer, spotifyApi }}>
         <Routes>
           <Route path='/' element={<Login />} />
           <Route path='/accueil' element={<Accueil />} />
           <Route path='/search' element={<Search />} />
         </Routes>
-        <Footer />
+
+        {token && <Footer />}
+        {/* {token ?<Footer /> : null} */}
       </Context.Provider>
 
-     
+
 
 
     </div>
