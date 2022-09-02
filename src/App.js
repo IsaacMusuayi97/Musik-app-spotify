@@ -8,6 +8,7 @@ import { Context } from './utils/Context';
 import Footer from './components/Footer';
 import SpotifyWebApi from 'spotify-web-api-js';
 
+
 function App() {
   const [token, setToken] = useState("")
   const [uriPlayer, setUriPlayer] = useState("")
@@ -22,9 +23,8 @@ function App() {
           <Route path='/accueil' element={<Accueil />} />
           <Route path='/search' element={<Search />} />
         </Routes>
-
-        {token && <Footer />}
-        {/* {token ?<Footer /> : null} */}
+        {/* {token && <Footer />} */}
+        {token ?<Footer /> : null}
       </Context.Provider>
 
 
