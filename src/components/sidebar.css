@@ -52,9 +52,7 @@
     text-decoration: none;
 }
 
-.accueil>div:hover {
-    font-weight: 500;
-}
+
 
 
 
@@ -69,9 +67,8 @@
     cursor: pointer;
 }
 
-/* .deconnexion-container {
-    text-align: center;
-}
-.deconnexion {
-    font-size: 20px;
-} */
+.active{
+  
+    font-weight: bold !important;
+   } 
+

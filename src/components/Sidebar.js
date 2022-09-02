@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Context } from '../utils/Context';
 import './sidebar.css'
 
@@ -17,26 +17,26 @@ function Sidebar() {
             <h1 className='bibliotheque'>Bibliothèque</h1>
             <div className='container--pages'>
                 
-                <Link style={{textDecoration: "none"}} to='/accueil'> 
+                <NavLink style={{textDecoration: "none"}} to='/accueil' activeClassName="active"> 
                 <div className='accueil'>
-                    <img src='icons8-accueil-24.png' /> <div>Accueil</div>   </div></Link>   
+                    <img src='icons8-accueil-24.png' /> <div>Accueil</div>   </div></NavLink>   
               
-            <Link style={{textDecoration: "none"}} to='/search'>
+            <NavLink style={{textDecoration: "none"}} to='/search' activeClassName="active">
             <div className='accueil'>
                     <img src='icons8-chercher-30.png' />
                     <div>Recherche</div>
                 </div>
-            </Link>
+            </NavLink>
                 <div className='accueil'>
                     <img src='icons8-playlist-50.png' />
                     <div>Playlists</div>
                 </div>
             </div>
-         <Link style={{textDecoration: "none"}} to='/'>
+         <NavLink style={{textDecoration: "none"}} to='/'>
          <div onClick={deconnexion} className='deconnexion--container'>
                Deconnexion
             </div>
-         </Link>
+         </NavLink>
         </div>
     )
 }
