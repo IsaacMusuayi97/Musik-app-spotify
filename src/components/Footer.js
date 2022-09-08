@@ -4,6 +4,8 @@ import SpotifyPlayer from "react-spotify-web-playback";
 import { Context } from '../utils/Context';
 function Footer() {
     const globalData = useContext(Context),
+    
+    
         [play, setPlay] = useState(false)
 
     useEffect(() => {
@@ -14,7 +16,7 @@ function Footer() {
 
         <div className='footer'>
             <SpotifyPlayer
-                token={token}
+                token={globalData.token}
                 uris={[globalData.uriPlayer]}
                 play={play}
                 autoPlay={true}
