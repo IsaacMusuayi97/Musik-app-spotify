@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import Card from './Card'
 import { ClipLoader } from 'react-spinners';
 import { Context } from '../utils/Context';
+import './body.css';
 
 function Body() {
     const { setToken, token, spotifyApi } = useContext(Context)

@@ -2,15 +2,12 @@ import React from 'react'
 import './Login.css'
 
 function Login() {
+    // "https://musik-app-spotify.vercel.app/accueil"
+     // "http://localhost:3001/accueil"
+    //  "http://localhost:3000/accueil"
 
-    const CLIENT_ID = "f5168e714aa641e7bc3c31ef96a84a3d"
-    const REDIRECT_URI =  "https://musik-app-spotify.vercel.app/accueil"
-    
-    // "http://localhost:3001/accueil"
-    
-   
-    const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
-    const RESPONSE_TYPE = "token"
+     const REDIRECT_URI = process.env.REACT_APP_REDIRECT_URI;
+
     const scope = [
         "user-read-email",
         "ugc-image-upload",
@@ -41,7 +38,7 @@ function Login() {
 
             <div>
                 <a href=
-                    {`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&scope=${scope.join('%20')}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&show_dialog=true`}>
+                    {`${ process.env.REACT_APP_AUTH_ENDPOINT}?client_id=${process.env.REACT_APP_CLIENT_ID}&scope=${scope.join('%20')}&redirect_uri=${ REDIRECT_URI }&response_type=${ process.env.REACT_APP_RESPONSE_TYPE}&show_dialog=true`}>
                     <button>Connexion</button> </a>
 
             </div>

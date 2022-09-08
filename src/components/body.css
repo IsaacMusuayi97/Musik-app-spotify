@@ -42,7 +42,7 @@
 
 .title {
     font-size: 20px;
-    color: rgb(56, 55, 55);
+    color: blue;
     margin-left: 26px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -75,4 +75,16 @@
     font-size: 16px;
     color: black;
     margin-top: 10px;
+}
+
+
+@media screen and (max-width : 650px){
+    .title {
+        font-size: 16px;
+      color: blue;
+    }   
+    .user {
+     
+        padding: 2px;
+    } 
 }
